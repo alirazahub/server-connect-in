@@ -12,8 +12,8 @@ import post from './routes/post.js'
 
 dotenv.config()
 const app = express();
-app.use(cors())
 connectDB();
+app.use(cors())
 
 app.use(cookieParser());
 app.use(express.json())
